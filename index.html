@@ -4,107 +4,105 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>revo COFFEE — Ваш персонализированный кофе</title>
-  <link rel="icon" type="image/x-icon" href="assets/LOGO.png" />
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+  <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Главная</a></li>
-        <li><a href="#coffee">Кофе</a></li>
-        <li><a href="#phin">Фин</a></li>
-        <li><a href="#combo">Комбо Фин-Фе</a></li>
-        <li><a href="#giftset">Подарочные наборы</a></li>
-        <li><a href="#contact">Контакты</a></li>
+  <header class="header">
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#coffee" class="nav__link">Кофе</a></li>
+        <li class="nav__item"><a href="#phin" class="nav__link">Фин</a></li>
+        <li class="nav__item"><a href="#combo" class="nav__link">Комбо Фин-Фе</a></li>
+        <li class="nav__item"><a href="#giftset" class="nav__link">Подарочные наборы</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="home">
-      <h1>revo COFFEE</h1>
-      <p>Ваш персонализированный кофе</p>
+    <section id="home" class="hero">
+      <h1 class="hero__title">revo COFFEE</h1>
+      <p class="hero__subtitle">Ваш персонализированный кофе</p>
     </section>
 
-    <section id="coffee">
-      <h2>Кофе</h2>
-      <div class="coffee-base">
-        <h3>Создайте свою основу</h3>
-        <ul>
-          <li><strong>Происхождение:</strong> Зёрна арабики высшего качества.</li>
-          <li><strong>Качество:</strong> Выбор зёрен — настоящее искусство.</li>
-          <li><strong>Сорта зёрен:</strong> 70 % вкуса чашки кофе определяется происхождением и качеством зелёных зёрен.</li>
-          <li><strong>Обжарка и помол:</strong> Зёрна тщательно отбираются и обрабатываются по технологиям, разработанным лучшими кофейными мастерами, с соблюдением международных стандартов.</li>
+    <section id="coffee" class="coffee">
+      <h2 class="coffee__title">Кофе</h2>
+      <div class="coffee__base base-coffee">
+        <h3 class="base-coffee__headline">Создайте свою основу</h3>
+        <ul class="base-coffee__list">
+          <li class="base-coffee__item"><strong>Происхождение:</strong> Зёрна арабики высшего качества.</li>
+          <li class="base-coffee__item"><strong>Качество:</strong> Выбор зёрен — настоящее искусство.</li>
+          <li class="base-coffee__item"><strong>Сорта зёрен:</strong> 70 % вкуса чашки кофе определяется происхождением и качеством зелёных зёрен.</li>
+          <li class="base-coffee__item"><strong>Обжарка и помол:</strong> Зёрна тщательно отбираются и обрабатываются по технологиям, разработанным лучшими кофейными мастерами, с соблюдением международных стандартов.</li>
         </ul>
       </div>
     </section>
 
-    <section id="products">
-      <h2>Выберите свой любимый вкус</h2>
+    <section id="products" class="products">
+      <h2 class="products__title">Выберите свой любимый вкус</h2>
+      <div class="products__list">
 
-      <article class="product">
-        <h3>REVO Утро</h3>
-        <p>Сладковатый, мягкий аромат.</p>
-        <p>99 000 ₫</p>
-        <p>Купить сейчас</p>
-        <p>Подробнее</p>
-      </article>
+        <article class="product">
+          <h3 class="product__title">REVO Утро</h3>
+          <p class="product__desc">Сладковатый, мягкий аромат.</p>
+          <p class="product__price">99 000 ₫</p>
+          <button class="product__btn product__btn--buy">Купить сейчас</button>
+          <button class="product__btn product__btn--more">Подробнее</button>
+        </article>
 
-      <article class="product">
-        <h3>REVO Повседневный</h3>
-        <img src="img/IMAGE.png" alt="Фото кофе">
-        <p>Сбалансированный вкус, лёгкая горечь, нотки шоколада.</p>
-        <p>85 000 ₫</p>
-        <p>Купить сейчас</p>
-        <p>Подробнее</p>
-      </article>
+        <article class="product">
+          <h3 class="product__title">REVO Повседневный</h3>
+          <p class="product__desc">Сбалансированный вкус, лёгкая горечь, нотки шоколада.</p>
+          <p class="product__price">85 000 ₫</p>
+          <button class="product__btn product__btn--buy">Купить сейчас</button>
+          <button class="product__btn product__btn--more">Подробнее</button>
+        </article>
 
-      <article class="product">
-        <h3>REVO Оригинал</h3>
-        <img src="img/IMAGE (2).png" alt="Фото кофе">
-        <p>Сладкое послевкусие, лёгкая кислинка, минимальная горечь.</p>
-        <p>139 000 ₫</p>
-        <p>Купить сейчас</p>
-        <p>Подробнее</p>
-      </article>
+        <article class="product product--premium">
+          <h3 class="product__title">REVO Оригинал</h3>
+          <p class="product__desc">Сладкое послевкусие, лёгкая кислинка, минимальная горечь.</p>
+          <p class="product__price">139 000 ₫</p>
+          <button class="product__btn product__btn--buy">Купить сейчас</button>
+          <button class="product__btn product__btn--more">Подробнее</button>
+        </article>
 
-      <article class="product">
-        <h3>REVO Насыщенный</h3>
-        <img src="img/IMAGE (3).png" alt="Фото кофе">
-        <p>Выразительная горечь, насыщенный вкус, в традициях классики.</p>
-        <p>75 000 ₫</p>
-        <p>Купить сейчас</p>
-        <p>Подробнее</p>
-      </article>
+        <article class="product">
+          <h3 class="product__title">REVO Насыщенный</h3>
+          <p class="product__desc">Выразительная горечь, насыщенный вкус, в традициях классики.</p>
+          <p class="product__price">75 000 ₫</p>
+          <button class="product__btn product__btn--buy">Купить сейчас</button>
+          <button class="product__btn product__btn--more">Подробнее</button>
+        </article>
+
+      </div>
     </section>
 
-    <section id="giftset">
-      <h2>Лучший подарок лучшему другу</h2>
-      <article>
-        <h3>Подарочный набор «Вьетнамский кофе в финке»</h3>
-        <link rel="png" type="image/x-icon" href="assets/img/pr-0018-r.png" />
-        <p>Идеальный подарок для ценителей кофе. Зёрна тщательно отобраны компанией Revo, обжарены и помолоты по уникальным технологиям, заимствованным у известных мастеров, с любовью и страстью к кофе. Каждая чашка — настоящее произведение, созданное специально для вас.</p>
-        <ul>
-          <li><strong>Сорт зёрен:</strong> Fine Robusta Blend</li>
-          <li><strong>Объём заварки:</strong> 700–800 мл</li>
+    <section id="giftset" class="giftset">
+      <h2 class="giftset__title">Лучший подарок лучшему другу</h2>
+      <article class="giftset__item">
+        <h3 class="giftset__name">Подарочный набор «Вьетнамский кофе в финке»</h3>
+        <p class="giftset__desc">Идеальный подарок для ценителей кофе...</p>
+        <ul class="giftset__specs">
+          <li class="giftset__spec"><strong>Сорт зёрен:</strong> Fine Robusta Blend</li>
+          <li class="giftset__spec"><strong>Объём заварки:</strong> 700–800 мл</li>
         </ul>
-        <p>285 000 ₫</p>
-        <p>Купить сейчас</p>
-        <p>Подробнее</p>
+        <p class="giftset__price">285 000 ₫</p>
+        <button class="giftset__btn giftset__btn--buy">Купить сейчас</button>
+        <button class="giftset__btn giftset__btn--more">Подробнее</button>
       </article>
     </section>
 
-    <section id="combo">
-      <h2>Ваш персонализированный кофе</h2>
-      <h3>Комбо «Фин-Фе»</h3>
+    <section id="combo" class="combo">
+      <h2 class="combo__title">Ваш персонализированный кофе</h2>
+      <h3 class="combo__subtitle">Комбо «Фин-Фе»</h3>
     </section>
   </main>
 
-  <footer id="contact">
-    <p>© 2025 revo COFFEE. Все права защищены.</p>
-    <p>Свяжитесь с нами</p>
+  <footer id="contact" class="footer">
+    <p class="footer__text">© 2025 revo COFFEE. Все права защищены.</p>
+    <p class="footer__text">Свяжитесь с нами</p>
   </footer>
-
 </body>
 </html>
