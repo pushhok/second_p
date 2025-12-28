@@ -31,10 +31,8 @@ img {
   height: auto;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
 :root {
-  --color-primary: #5D4037; /* кофейно-коричневый вместо зелёного */
+  --color-primary: #5D4037;
   --color-light: #f8f9fa;
   --color-gray: #ddd;
   --color-dark: #333;
@@ -82,20 +80,19 @@ img {
 .hero {
   text-align: center;
   padding: var(--spacing-xl) var(--spacing-md);
-  background-color: #0D1B2A; 
-  color: white; 
+  background-color: #0D1B2A;
+  color: white;
 }
 
 .hero__title {
   font-size: 2.5rem;
   font-weight: 700;
-  color: white; 
   margin-bottom: var(--spacing-sm);
 }
 
 .hero__subtitle {
   font-size: 1.25rem;
-  color: #e0e0e0; 
+  color: #e0e0e0;
 }
 
 .coffee {
@@ -308,4 +305,82 @@ img {
 
 html {
   scroll-behavior: smooth;
+}
+
+/* === АДАПТИВНОСТЬ: Desktop First === */
+
+/* Планшеты и ниже: < 992px */
+@media (max-width: 991px) {
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
+
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.1rem;
+  }
+
+  .products__list {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
+/* Мобильные: < 768px */
+@media (max-width: 767px) {
+  .nav__link {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 1.1rem;
+  }
+
+  .coffee,
+  .products,
+  .giftset {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .products__title,
+  .coffee__title,
+  .giftset__title {
+    font-size: 1.75rem;
+  }
+
+  .giftset__item {
+    padding: var(--spacing-lg);
+  }
+
+  .combo__title {
+    font-size: 1.75rem;
+  }
+}
+
+/* Очень маленькие экраны: < 480px */
+@media (max-width: 479px) {
+  .hero {
+    padding: 2rem var(--spacing-md);
+  }
+
+  .hero__title {
+    font-size: 1.75rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .base-coffee__item {
+    font-size: 0.95rem;
+  }
+
+  .product__btn {
+    font-size: 0.95rem;
+  }
+
+  .footer__text {
+    font-size: 0.9rem;
+  }
 }

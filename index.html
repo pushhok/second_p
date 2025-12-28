@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>revo COFFEE — Ваш персонализированный кофе</title>
-  <link rel="icon" type="image/x-icon" href="assets/LOGO.png" />
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
   <link rel="stylesheet" href="styles/style.css" />
+  <!-- Шрифт Inter подключён через link для лучшей производительности -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -13,7 +15,7 @@
       <ul class="nav__list">
         <li class="nav__item"><a href="#home" class="nav__link">Главная</a></li>
         <li class="nav__item"><a href="#coffee" class="nav__link">Кофе</a></li>
-        <li class="nav__item"><a href="#phin" class="nav__link">Фин</a></li>
+        <!-- Удалена ссылка на #phin, так как секции нет -->
         <li class="nav__item"><a href="#combo" class="nav__link">Комбо Фин-Фе</a></li>
         <li class="nav__item"><a href="#giftset" class="nav__link">Подарочные наборы</a></li>
         <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
@@ -43,12 +45,10 @@
     <section id="products" class="products">
       <h2 class="products__title">Выберите свой любимый вкус</h2>
       <div class="products__list">
-
         <article class="product">
           <h3 class="product__title">REVO Утро</h3>
-
           <p class="product__desc">Сладковатый, мягкий аромат.</p>
-          <p class="product__price">99 000</p>
+          <p class="product__price">99 000 ₫</p>
           <button class="product__btn product__btn--buy">Купить сейчас</button>
           <button class="product__btn product__btn--more">Подробнее</button>
         </article>
@@ -56,7 +56,7 @@
         <article class="product">
           <h3 class="product__title">REVO Повседневный</h3>
           <p class="product__desc">Сбалансированный вкус, лёгкая горечь, нотки шоколада.</p>
-          <p class="product__price">85 000</p>
+          <p class="product__price">85 000 ₫</p>
           <button class="product__btn product__btn--buy">Купить сейчас</button>
           <button class="product__btn product__btn--more">Подробнее</button>
         </article>
@@ -64,7 +64,7 @@
         <article class="product product--premium">
           <h3 class="product__title">REVO Оригинал</h3>
           <p class="product__desc">Сладкое послевкусие, лёгкая кислинка, минимальная горечь.</p>
-          <p class="product__price">139 000</p>
+          <p class="product__price">139 000 ₫</p>
           <button class="product__btn product__btn--buy">Купить сейчас</button>
           <button class="product__btn product__btn--more">Подробнее</button>
         </article>
@@ -72,24 +72,23 @@
         <article class="product">
           <h3 class="product__title">REVO Насыщенный</h3>
           <p class="product__desc">Выразительная горечь, насыщенный вкус, в традициях классики.</p>
-          <p class="product__price">75 000</p>
+          <p class="product__price">75 000 ₫</p>
           <button class="product__btn product__btn--buy">Купить сейчас</button>
           <button class="product__btn product__btn--more">Подробнее</button>
         </article>
-
       </div>
     </section>
 
     <section id="giftset" class="giftset">
       <h2 class="giftset__title">Лучший подарок лучшему другу</h2>
       <article class="giftset__item">
-        <h3 class="giftset__name">Подарочный набор «Вьетнамский кофе «Фин»»</h3>
+        <h3 class="giftset__name">Подарочный набор «Вьетнамский кофе ФИН»</h3>
         <p class="giftset__desc">Идеальный подарок для ценителей кофе...</p>
         <ul class="giftset__specs">
           <li class="giftset__spec"><strong>Сорт зёрен:</strong> Fine Robusta Blend</li>
           <li class="giftset__spec"><strong>Объём заварки:</strong> 700–800 мл</li>
         </ul>
-        <p class="giftset__price">285 000</p>
+        <p class="giftset__price">285 000 ₫</p>
         <button class="giftset__btn giftset__btn--buy">Купить сейчас</button>
         <button class="giftset__btn giftset__btn--more">Подробнее</button>
       </article>
