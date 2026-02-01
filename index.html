@@ -4,26 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>revo COFFEE — Ваш персонализированный кофе</title>
-  <link rel="icon" type="image/x-icon" href="assets/LOGO.png" />
+  <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
   <link rel="stylesheet" href="styles/style.css" />
-  <!-- Шрифт Inter подключён через link для лучшей производительности -->
+  <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <nav class="header__nav nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link">Главная</a></li>
-        <li class="nav__item"><a href="#coffee" class="nav__link">Кофе</a></li>
-        <!-- Удалена ссылка на #phin, так как секции нет -->
-        <li class="nav__item"><a href="#combo" class="nav__link">Комбо Фин-Фе</a></li>
-        <li class="nav__item"><a href="#giftset" class="nav__link">Подарочные наборы</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <div class="header__inner">
+        <a href="#home" class="logo">
+          <span class="logo__text">revo COFFEE</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+
+        <nav class="nav" id="mainNav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link active">Главная</a></li>
+            <li class="nav__item"><a href="#coffee" class="nav__link">Кофе</a></li>
+            <li class="nav__item"><a href="#products" class="nav__link">Продукты</a></li>
+            <li class="nav__item"><a href="#combo" class="nav__link">Комбо Фин-Фе</a></li>
+            <li class="nav__item"><a href="#giftset" class="nav__link">Подарочные наборы</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
-  <main>
+  <main class="main">
     <section id="home" class="hero">
       <h1 class="hero__title">revo COFFEE</h1>
       <p class="hero__subtitle">Ваш персонализированный кофе</p>
@@ -82,7 +96,7 @@
     <section id="giftset" class="giftset">
       <h2 class="giftset__title">Лучший подарок лучшему другу</h2>
       <article class="giftset__item">
-        <h3 class="giftset__name">Подарочный набор «Вьетнамский кофе ФИН»</h3>
+        <h3 class="giftset__name">Подарочный набор «Вьетнамский кофе в финке»</h3>
         <p class="giftset__desc">Идеальный подарок для ценителей кофе...</p>
         <ul class="giftset__specs">
           <li class="giftset__spec"><strong>Сорт зёрен:</strong> Fine Robusta Blend</li>
@@ -101,8 +115,16 @@
   </main>
 
   <footer id="contact" class="footer">
-    <p class="footer__text">© 2025 revo COFFEE. Все права защищены.</p>
-    <p class="footer__text">Свяжитесь с нами</p>
+    <div class="container">
+      <p class="footer__text">© 2025 revo COFFEE. Все права защищены.</p>
+      <p class="footer__text">Свяжитесь с нами</p>
+    </div>
   </footer>
+
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+    ↑
+  </button>
+
+  <script src="scripts/menu.js"></script>
 </body>
 </html>
